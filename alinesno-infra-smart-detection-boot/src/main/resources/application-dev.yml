@@ -1,0 +1,10 @@
+server:
+  port: 30305
+
+# spring 配置
+spring:
+  application:
+    name: alinesno-infra-smart-detection-boot
+  devtools:
+    restart:
+      enabled: true
