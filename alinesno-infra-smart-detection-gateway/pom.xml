@@ -10,7 +10,7 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>alinesno-infra-smart-detection-api</artifactId>
+	<artifactId>alinesno-infra-smart-detection-gateway</artifactId>
 	<packaging>jar</packaging>
 
 	<dependencies>
