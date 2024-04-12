@@ -104,6 +104,12 @@ export const constantRoutes = [
         meta: { title: '模型管理', icon: 'dashboard', affix: true }
       }, 
       {
+        path: '/smart/detection/type/index',
+        component: () => import('@/views/smart/detection/type/index'),
+        name: '/smart/detection/type/index',
+        meta: { title: '识别分析', icon: 'dashboard', affix: true }
+      }, 
+      {
         path: '/smart/detection/analyse/index',
         component: () => import('@/views/smart/detection/analyse/index'),
         name: '/smart/detection/analyse/index',

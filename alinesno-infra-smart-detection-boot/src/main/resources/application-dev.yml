@@ -19,6 +19,16 @@ spring:
     restart:
       enabled: true
 
+actable:
+  table:
+    auto: update
+  model:
+    pack: com.alinesno.infra.smart.detection.entity;
+  database:
+    type: mysql
+  index:
+    prefix: alinesno_smart_detection_idx_
+
 # sa-token配置
 sa-token:
   token-name: satoken

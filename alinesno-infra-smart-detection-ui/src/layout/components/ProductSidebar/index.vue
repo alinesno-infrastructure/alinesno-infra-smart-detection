@@ -23,6 +23,7 @@ const router = useRouter();
 // 菜单列表
 const menuItems = ref([
   {id:'5' , icon:'fa-brands fa-slack' , link:'/smart/detection/application/index' , desc:'应用管理'},
+  {id:'7' , icon:'fa-solid fa-file-pdf' , link:'/smart/detection/type/index' , desc:'业务类型'},
   {id:'6' , icon:'fa-solid fa-at' , link:'/smart/detection/analyse/index' , desc:'识别分析'},
   {id:'3' , icon:'fa-solid fa-file-word' , link:'/smart/detection/config/index' , desc:'请求配置'}, 
   {id:'2' , icon:'fa-solid fa-at' , link:'/smart/detection/model/index' , desc:'模型管理'},
