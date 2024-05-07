@@ -18,7 +18,7 @@
               </div>
             </div>
             <div class="title-desc">
-              集群状态展示集群资源的概览和详情，您可以查看集群资源的监控数据和用量排行情况。
+              {{  currentEnvClusterObj.clusterDesc }}
             </div>
           </div>
         </div>
@@ -45,8 +45,8 @@ import OperationWorkspaceService from './operation-workspace/service.vue'
 
 const currentEnvClusterObj = ref({
   appName: '目标检测识别服务',
-  clusterName: '基于多个主流(GPT/星火/文心一言等)大模型的服务调用和管理'  , 
-  apiServerUrl: 'http://portal.infra.linesno.com'
+  clusterName: '基于多个主流大模型的服务调用和管理'  , 
+  clusterDesc: '车辆行人多目标检测与追踪系统结合了先进技术，为智慧城市安全与管理提供强大支持。'
 }) 
 
 </script>
