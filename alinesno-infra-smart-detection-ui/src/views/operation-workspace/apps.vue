@@ -9,7 +9,7 @@
           <div class="panel-body" style="height: auto;position: relative;">
               <div class="direct-box">
                 <ul>
-                  <li class="box-item" v-for="item in directContent" :key="item">
+                  <li class="box-item" v-for="item in attractiveFeatures" :key="item">
                     <div class="dire-panel">
                       <div class="panel-title">
                         <i class="dire-panel-icon" :class="item.icon" :alt="item.name" />
@@ -54,18 +54,18 @@
 
 <script setup>
 
-const directContent = ref([
-  { icon: 'fa-brands fa-slack', name: '智能鉴黄', desc: '识别文本中的色情行为描述、色情资源链接、低俗交友、污秽文爱等涉黄内容' },
-  { icon: 'fa-solid fa-list-check', name: '违禁违规', desc: '识别暴力行为、恐怖描述、赌博、毒品、枪支弹药等违禁文字内容' },
-  { icon: 'fa-solid fa-at', name: '恶意推广', desc: '识别带有售卖意向的软文广告、微信/QQ/联系方式等违规广告，支持包含符号、图标等变异广告' },
-  { icon: 'fa-solid fa-list-check', name: '低俗辱骂', desc: '识别文本中的侮辱谩骂、人身攻击、消极宣泄等不良内容' },
-  { icon: 'fa-solid fa-file-word', name: '低质灌水', desc: '识别网络社区常见的乱码、水帖、刷屏等无意义的灌水信息' },
+const attractiveFeatures = ref([
+  { "icon": "fa-solid fa-video", "name": "实时监控", "desc": "能够在实时视频画面中准确检测并跟踪行人与车辆，提供即时反馈与数据支持" },
+  { "icon": "fa-solid fa-car-crash", "name": "事故预警", "desc": "提供准确的事故记录与快速响应能力，帮助降低事故发生风险" },
+  { "icon": "fa-solid fa-shield-alt", "name": "安全监控", "desc": "用于公共场所与设施周边的安全监控，预防犯罪行为，提升公共安全管理水平" },
+  { "icon": "fa-solid fa-route", "name": "智能交通", "desc": "整合至自动驾驶系统，帮助车辆避免碰撞，提升交通安全水平" },
+  { "icon": "fa-solid fa-chart-network", "name": "数据驱动", "desc": "通过长期数据收集与分析，为城市规划与基础设施建设提供决策支持，助力城市可持续发展" }
 ]);
 
 const apps = ref([
-  { icon: 'fa-solid fa-eye-slash', name: '智能内容审核', desc: '识别文章内容中的违规信息、低俗内容、暴力内容等敏感信息' },
-  { icon: 'fa-solid fa-user-shield', name: '注册信息检测', desc: '识别注册信息中的违规内容、虚假信息等不当信息' },
-  { icon: 'fa-solid fa-comment-slash', name: '评论过滤系统', desc: '过滤用户评论中的不良言论、侮辱性内容、广告等信息' },
+  { "icon": "fa-solid fa-car", "name": "智慧交通监控", "desc": "监测城市交通流量、行人穿行情况，优化交通信号控制，提高交通效率" },
+  { "icon": "fa-solid fa-video-surveillance", "name": "安全监控系统", "desc": "用于公共场所和重要设施周边的安全监控，预防犯罪行为，提升安全水平" },
+  { "icon": "fa-solid fa-city", "name": "智慧城市规划", "desc": "通过数据收集分析人流和车流模式，为城市规划和基础设施建设提供支持" }
 ]);
 
 </script>

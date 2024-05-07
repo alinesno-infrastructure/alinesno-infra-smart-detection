@@ -107,7 +107,7 @@ const drawLine = (id, result, color, color0, color1) => {
 	accessChart.setOption(option, true);
 }
 
-defineExpose({ 
+defineExpose({
     dialogFormVisible,
     count
 });

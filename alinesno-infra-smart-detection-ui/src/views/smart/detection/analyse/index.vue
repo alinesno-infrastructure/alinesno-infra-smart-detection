@@ -11,7 +11,7 @@
 					</div>
 				</el-col>
 			</el-row>
-			
+
 			<el-row :gutter="24" style="margin-top: 16px;">
 				<el-col :span="12">
 					<div style="margin-left: 20px;">
@@ -30,7 +30,7 @@
 					<div id="requestAccessChart" class="chart_line_1"></div>
 				</el-col>
 			</el-row>
-			
+
 			<el-row style="margin-top: 18px;">
 				<el-col :span="10">&nbsp;</el-col>
 				<el-col :span="14">
@@ -49,7 +49,7 @@
 					</div>
 				</el-col>
 			</el-row>
-			
+
 			<el-table :data="tableData" style="margin-top: 18px;">
 				<el-table-column label="服务ID" width="300">
 					<template #default="scope">
@@ -76,7 +76,7 @@
 								统计
 							</el-button>
 						</template>
-					</el-table-column>	
+					</el-table-column>
 			</el-table>
 			<div class="block" style="margin-top: 20px;">
 				<el-pagination
@@ -89,15 +89,15 @@
 					:total="totalNum">
 				</el-pagination>
 			</div>
-		</el-card>		
-	
+		</el-card>
+
 		<RouteRequestCountComponent ref="routeRequestCount"></RouteRequestCountComponent>
 	</div>
 </template>
 
 <script setup>
 import RouteRequestCountComponent from './routeRequestCount.vue'
-import { countRoutePageList, countRequestTotal } from '@/api/smart/media/count_api.js'
+import { countRoutePageList, countRequestTotal } from '@/api/smart/detection/count_api.js'
 import { getCurrentInstance } from 'vue'
 
 import * as echarts from "echarts";
@@ -246,7 +246,7 @@ export default {
 			totalNum: 0,
 			statusOptions: [
 				{value: null, label: '所有'},
-				{value: '0',label: '启用'}, 
+				{value: '0',label: '启用'},
 				{value: '1',label: '禁用'},
 			],
 			groupOptions: this.GLOBAL_VAR.groups
@@ -256,10 +256,10 @@ export default {
 		RouteRequestCountComponent
 	},
 	created: function() {
-		this.init();			
+		this.init();
 	},
 	mounted: function() {
-		
+
 	},
 	beforeDestroy: function() {
 	},
@@ -302,8 +302,8 @@ export default {
 		drawLine(id, result) {
 
 			console.log('id = ' + id);
-			console.log('echarts = ' + proxy.$echarts) ; 
-			console.log('echarts = ' + this.$echarts) ; 
+			console.log('echarts = ' + proxy.$echarts) ;
+			console.log('echarts = ' + this.$echarts) ;
 
 			let xAxisData =  [];
 			let seriesData = [];
@@ -344,7 +344,7 @@ export default {
 				},
 				series: [{
 					//data: [820, 932, 901, 934, 1290, 1330, 1320],
-					data: seriesData, 
+					data: seriesData,
 					type: 'line',
 					smooth: true
 				}]
@@ -370,13 +370,13 @@ export default {
 	 }
 	 .span_1{
 		 font-size: 18pt;
-		 font-weight: bold; 
+		 font-weight: bold;
 		 margin-bottom: 9px;
 	 }
 	 .span_14 {
-		 font-size: 14pt; 
-		 color: #90A0A5; 
-		 font-weight: bold; 
+		 font-size: 14pt;
+		 color: #90A0A5;
+		 font-weight: bold;
 		 margin-left: 6px;
 	 }
 	 .chart_line_1 {
