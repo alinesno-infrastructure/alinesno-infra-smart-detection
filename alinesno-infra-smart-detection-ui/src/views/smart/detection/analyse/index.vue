@@ -15,7 +15,7 @@
 			<el-row :gutter="24" style="margin-top: 16px;">
 				<el-col :span="12">
 					<div style="margin-left: 20px;">
-						<i class="iconfont icon-icon_renwujincheng" style="font-size: 16pt; color: #90A0A5;"></i>
+						<i class="fa-solid fa-tv" style="font-size: 16pt; color: #90A0A5;"></i>
 						<span class="span_14">7日请求总量</span>
 					</div>
 					<el-divider style="width: 80%;"></el-divider>
@@ -23,7 +23,7 @@
 				</el-col>
 				<el-col :span="12">
 					<div style="margin-left: 20px;">
-						<i class="iconfont icon-yibiaopan" style="font-size: 16pt; color: #90A0A5;"></i>
+						<i class="fa-solid fa-tv" style="font-size: 16pt; color: #90A0A5;"></i>
 						<span class="span_14">24小时请求总量</span>
 					</div>
 					<el-divider style="width: 80%;"></el-divider>
@@ -97,7 +97,7 @@
 
 <script setup>
 import RouteRequestCountComponent from './routeRequestCount.vue'
-import { countRoutePageList, countRequestTotal } from '@/api/smart/detection/count_api.js'
+import { countRoutePageList, countRequestTotal } from '@/api/smart/media/count_api.js'
 import { getCurrentInstance } from 'vue'
 
 import * as echarts from "echarts";
