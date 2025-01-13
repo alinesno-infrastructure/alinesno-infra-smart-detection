@@ -11,7 +11,7 @@
 export default {
   data () {
     return {
-      currentApplicationName: 'GPT推理服务'
+      currentApplicationName: '目标识别检测服务'
     }
   },
   mounted () {
